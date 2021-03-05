@@ -1,20 +1,20 @@
 import React, { Component } from 'react';
-import shopData from '../shopData';
+import SHOP_DATA from './shopData.js';
 
-class Shop extends Component {
+class ShopPage extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      collections: shopData,
+      collections: SHOP_DATA,
     }
   }
   render() {
     return (
       <div>
-        
+        SHOP_PAGE
       </div>
     );
   }
 }
 
-export default Shop;
+export default ShopPage;
