@@ -42,9 +42,11 @@ class SignIn extends Component {
             value={this.state.password}
             handleChange={this.handleChange}
             required />
-          
+          <div className='buttons'>
           <CustomButton type='submit'>Sign In</CustomButton>
           <CustomButton onClick={signInWithGoogle} isGoogleSignIn>Sign In With Google</CustomButton>
+          </div>
+         
 				</form>
 			</div>
 		);
