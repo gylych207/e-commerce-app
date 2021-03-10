@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { ReactComponent as Logo } from '../../assets/4.3 crown.svg';
 import { auth } from '../firebase/utils.js';
 import {connect} from 'react-redux';
+import CardIcon from '../card-icon/CardIcon';
 
 const Header = ({currentUser}) => {
 	return (
@@ -24,6 +25,7 @@ const Header = ({currentUser}) => {
             :
             <Link className='option' to='/signin'>SIGN IN</Link>
         }
+        <CardIcon/>
 			</div>
     </div>
     
