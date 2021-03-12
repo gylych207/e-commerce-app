@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { ReactComponent as Logo } from '../../assets/4.3 crown.svg';
 import { auth } from '../firebase/utils.js';
 import {connect} from 'react-redux';
-import CardIcon from '../card-icon/CardIcon';
+import CardIcon from '../../components/cardIcon/CardIcon';
 
 const Header = ({currentUser}) => {
 	return (
