@@ -2,6 +2,7 @@ import './App.css';
 import React from 'react';
 import HomePage from './Screens/home/HomePage.jsx';
 import ShopPage from './Screens/shop/ShopPage.jsx';
+
 import { Route, Switch, Redirect } from 'react-router-dom';
 import Header from './components/header/Header';
 import SignInSignUp from './components/signInSignUp/SignInSignUp';
@@ -10,6 +11,7 @@ import { connect } from 'react-redux';
 import {createStructuredSelector} from 'reselect';
 import { setCurrentUser } from './redux/user/user-actions';
 import {selectCurrentUser} from './redux/user/user-selector';
+import Checkout from './Screens/checkout/Checkout';
 
 
 class App extends React.Component {
@@ -41,6 +43,7 @@ class App extends React.Component {
 				<Switch>
 					<Route exact path="/" component={HomePage} />
 					<Route path="/shop" component={ShopPage} />
+					<Route exact path="/checkout" component={Checkout} />
 				  <Route
             exact
             path='/signin'
